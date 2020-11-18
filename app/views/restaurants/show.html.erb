@@ -1,0 +1,8 @@
+<div class="container">
+<h2><%= @restaurant.name %></h2>
+<h5><strong>Address: </strong><%= @restaurant.address %></h5>
+<h5><strong>Phone number: </strong><%= @restaurant.phone_number %></h5>
+
+<%= link_to "New review", new_restaurant_review_path(@restaurant) %>
+<%= link_to "Back to list", restaurants_path %>
+</div>
